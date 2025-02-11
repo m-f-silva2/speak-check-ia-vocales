@@ -13,17 +13,17 @@ TARGET_SAMPLES = int(SAMPLE_RATE * DURATION)  # Número de muestras objetivo.
 HOP_LENGTH = 256 #256 #128  # sliding window for FFT. Measured in number of samples
 N_FFT = 256 #256  # length of the windowed signal after padding with zeros
 
-"""phonemes = [
+phonemes = [
     "a", "e", "i", "noise", "o", "u", 
     "pa", "pe", "pi", "po", "pu", 
     "papa", "pelo", "pie", "Palo", "pila", 
     "pollo", "lupa", "pulpo", "mapa", "pino", "pan"
-    ]"""
-phonemes = [
+    ]
+"""phonemes = [
     "noise","pa", "pe", "pi", "po", "pu", 
     "papa", "pelo", "pie", "palo", "pila", 
     "pollo", "lupa", "pulpo", "mapa", "pino", "pan"
-    ]
+    ]"""
 pronuns = ["correct", "incorrect", "noise"]
 
 def read_audio_segments(file):
